@@ -2,7 +2,7 @@ metadata = {"test" ,"source" ,"index" ,"category" ,"timestamp"}
 LLM model 採用(暫定) -> MediaTek-Research/Llama-Breeze2-8B-Instruct
 embedding model -> BAAI/bge-m3
 
-
+data、test folder內的東西用不到
 
 
 ------------------------------------------------------------------------
