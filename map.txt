@@ -1,0 +1,22 @@
+project/
+│
+├─ .venv/
+├─ data/
+│   └─ sample.txt                # 測試資料
+│
+├─ rag_module/
+│   ├─ __init__.py
+│   ├─ config.py
+│   ├─ text_cleaner.py
+│   ├─ text_splitter.py
+│   ├─ embedding.py
+│   ├─ vectorstore.py
+│   ├─ prompt_builder.py
+│   ├─ llm_interface.py
+│   └─ rag_api.py
+│
+├─ scripts/
+│   └─ test_rag_pipeline.py
+│
+├─ .env
+└─ requirements.txt

@@ -1,0 +1,42 @@
+{
+    "metadata": {
+        "school": "國立中興大學",
+        "college": "電機資訊學院",
+        "department_name": "電機工程學系",
+        "degree_level": "碩士班",
+        "academic_year": "114",
+        "source_url": "電機通訊光電114.pdf"
+    },
+    "content": {
+        "study_period": {
+            "min_years": "1",
+            "max_years": "4"
+        },
+        "credit_structure": {
+            "elective_courses": "24",
+            "required_courses": "0",
+            "note": "必修、選修合併計算",
+            "thesis": "6"
+        },
+        "core_requirements": [
+            "通訊研討（一）（二）0",
+            "資訊研討（一）（二）0",
+            "控制研討（一）（二）0",
+            "電子研討（一）（二）0",
+            "系統晶片研討（一）（二）0",
+            "類比電路研討（一）（二）0",
+            "電機工程專題（一）（二）0"
+        ],
+        "supplementary_courses": {},
+        "thesis_exam": {},
+        "english_requirement": {
+            "description": "依「國立中興大學學生英文能力畢業標準檢定辦法」第2條規定，授權系所自訂研究生英語能力畢業標準。(98.3.26第57次教務會議訂定)"
+        },
+        "professional_requirement": {
+            "description": "各組必選修科目",
+            "details": "依「國立中興大學學生英文能力畢業標準檢定辦法」第2條規定，授權系所自訂研究生英語能力畢業標準。(98.3.26第57次教務會議訂定)"
+        },
+        "other_notes": [],
+        "total_credits": "30"
+    }
+}

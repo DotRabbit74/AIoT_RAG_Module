@@ -1,0 +1,11 @@
+__pycache__
+.venv
+.git
+.env
+*.pyc
+qdrant_data
+logs
+data
+test
+testing_scripts
+vllm

@@ -1,0 +1,12 @@
+metadata = {"test" ,"source" ,"index" ,"category" ,"timestamp"}
+LLM model 採用(暫定) -> MediaTek-Research/Llama-Breeze2-8B-Instruct
+embedding model -> BAAI/bge-m3
+
+
+
+
+------------------------------------------------------------------------
+task:
+1. 若server是linux架構 需要一個分層的requirements
+2. qdrant vLLM API都用docker包起來?
+3. env文件的編寫

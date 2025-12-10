@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Docker / Local Data
+qdrant_data/
+qdrant_storage/
+logs/
+vllm/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional: Exclude data if it's sensitive or large
+# data/
