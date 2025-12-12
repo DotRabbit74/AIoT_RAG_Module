@@ -47,7 +47,7 @@ services:
   # 3. 您的 API (FastAPI + Embedding)
   # ---------------------------
   rag-api:
-    build: .
+    #build: .
     container_name: rag-api-server
     restart: always
     ports:
