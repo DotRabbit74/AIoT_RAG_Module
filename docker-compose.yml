@@ -27,10 +27,10 @@ services:
     command: >
       --model MediaTek-Research/Llama-Breeze2-8B-Instruct-v0_1
       --served-model-name breeze-8b
-      --dtype bfloat16
+      --dtype half
       --api-key EMPTY
-      --max-model-len 8192
-      --gpu-memory-utilization 0.85 
+      --max-model-len 4096
+      --gpu-memory-utilization 0.7 
     volumes:
       - ~/.cache/huggingface:/root/.cache/huggingface
     ports:

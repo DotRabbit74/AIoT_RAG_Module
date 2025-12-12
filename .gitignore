@@ -28,4 +28,5 @@ vllm/
 Thumbs.db
 
 # Optional: Exclude data if it's sensitive or large
-# data/
+data/
+test/

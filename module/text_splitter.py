@@ -3,11 +3,11 @@ from transformers import AutoTokenizer
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class TokenTextSplitter:
-    def __init__(self, using_tokenizer=False, model_name="BAAI/bge-m3", chunk_size=1500, overlap=200):
+    def __init__(self, using_tokenizer=False, model_name="BAAI/bge-m3", chunk_size=800, overlap=100):
         """
         chunk_size: 
             - 若 using_tokenizer=True，單位為 tokens
-            - 若 using_tokenizer=False，單位為 characters
+            - 若 using_tokenizer=False，單位為 characters (配合 4096 context 縮小切分)
         overlap: 重疊區域的大小 (單位同上)
         """
         self.using_tokenizer = using_tokenizer

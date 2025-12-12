@@ -1,0 +1,43 @@
+# for Linux
+# ==================================
+# 1. 核心環境設定 (General)
+# ==================================
+# 設定為 production，讓 API 知道現在是正式環境
+APP_ENV=production
+# 日誌等級 (INFO, WARNING, ERROR)
+LOG_LEVEL=INFO
+
+# ==================================
+# 2. API 服務設定 (FastAPI)
+# ==================================
+# 在 Docker 內必須設為 0.0.0.0 才能被外部存取
+API_HOST=0.0.0.0
+API_PORT=5000
+
+# [選填] 資料注入 API 的保護密鑰 (如果您有實作 X-Admin-Key)
+# API_SECRET_KEY
+
+# ==================================
+# 3. LLM 連線設定 (vLLM)
+# ==================================
+# [重要] 這裡必須填 Docker Compose 裡的服務名稱 "llm-engine"
+# 絕對不能填 localhost，因為 localhost 指的是 API 容器自己
+LLM_API_HOST=http://llm-engine
+LLM_API_PORT=8000
+LLM_MODEL_NAME=MediaTek-Research/Llama-Breeze2-8B-Instruct-v0_1
+
+# [關鍵] Hugging Face Token (用於下載 Breeze2 模型)
+# 請去 HF 官網申請 Read 權限的 Token
+HUGGING_FACE_HUB_TOKEN=your_hf_token_here
+
+# ==================================
+# 4. 向量資料庫設定 (Qdrant)
+# ==================================
+# [重要] 這裡必須填 Docker Compose 裡的服務名稱 "qdrant"
+QDRANT_HOST=qdrant
+QDRANT_PORT=6333
+QDRANT_COLLECTION_NAME = "main_vector_db"
+
+# [選填] 如果您在 Qdrant 啟動時有設定密碼 (建議設定)
+# 如果沒設密碼，這行可以留空或註解掉
+# QDRANT_API_KEY=

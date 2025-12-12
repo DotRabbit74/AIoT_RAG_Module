@@ -34,7 +34,7 @@ class Settings(BaseSettings):
     EMBEDDING_BATCH_SIZE: int = 32
     
     # prompt_builder 設定
-    PROMPT_MAX_CONTEXT_CHARS: int = 6800  # context 最大字元數
+    PROMPT_MAX_CONTEXT_CHARS: int = 3000  # context 最大字元數 (配合 max-model-len 4096 縮減)
 
     # LLM 設定
     LLM_MODEL_NAME: str = "breeze-8b"
